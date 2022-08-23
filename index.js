@@ -15,6 +15,7 @@ async function initial_prompt() {
     const choose = await inquirer.prompt(chooseQuest);
 }
 
+
 const add_deptPrompt = {
     type: 'input',
     name: 'addDepartment',
@@ -87,5 +88,8 @@ function chosen(data) {
         prompt(add_emp).then(data => {
             console.log(data);
         })
-    }
+    };
+
+main();
+chosen();
     
